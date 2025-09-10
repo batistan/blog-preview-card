@@ -3,14 +3,14 @@
     src: local("Figtree");
          url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
     font-style: normal;
-    font-weight: auto;
+    font-weight: 100 900;
 }
 @font-face {
     font-family: Figtree;
     src: local("Figtree");
          url("assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
     font-style: italic;
-    font-weight: auto;
+    font-weight: 100 900;
 }
 
 * {
@@ -59,7 +59,6 @@
 
 .card:hover {
     transform: translateY(-10px);
-    transition: transform 0.2s ease-in;
 }
 
 .card {
@@ -100,9 +99,6 @@
     cursor: pointer;
 }
 
-.card--subtitle {
-}
-
 .card--body {
     color: var(--color-text-light);
 }
@@ -121,7 +117,7 @@
 .card--category {
     font-size: var(--text-sm);
     font-weight: var(--font-wght-bold);
-    background-color: #F6CF4E;
+    background-color: var(--bg);
     padding: var(--gap-50) var(--gap-150);
     border-radius: var(--gap-50);
     width: fit-content;
